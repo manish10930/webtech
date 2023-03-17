@@ -108,6 +108,15 @@ nav{
 
 
 @media (max-width:600px) {
+    .header{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(4,9,30,0.1),rgba(4,9,30,0.5)), url(img/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
     .text-box h1{
         font-size: 20px;
     }
