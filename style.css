@@ -2,10 +2,11 @@
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
-   font-family: 'Roboto', sans-serif;
-    overflow-x:hidden;
-    
+    font-family: 'Roboto', sans-serif;
+    /* scroll-behavior: smooth; */
+    overflow-x: hidden;
 }
+
 .header{
     width: 100%;
     min-height: 100vh;
@@ -101,9 +102,8 @@ nav{
     border: 1px solid #f44336;
     transition: 1s;
 }
-.icon{
+.navbar .fa-solid{
     display: none;
-
 }
 
 
@@ -127,14 +127,15 @@ nav{
         background-color: #f44336;
         height: 100vh;
         top: 0;
-        right: -250px;
-        /* right:0px ; */
+        right: -300px;
+        /* right: 0; */
         text-align: left;
         width: 50%;
         z-index: 2;
         margin-top: 0px;
+        transition: 1s;
     }
-    .icon{
+    .navbar .fa-solid{
         display: block;
         color: #fff;
         margin: 0px 5px;
