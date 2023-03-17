@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Webtech</title>
+
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,10 +27,10 @@
   </head>
   <body>
     <section class="header">
-      <nav>
+      <nav class="navbar">
         <a href=""><img src="img/logo.png" alt="" class="logo" /></a>
-        <div class="nav-links">
-          <div class="icon"><i class="fa-solid fa-xmark"></i></div>
+        <div class="nav-links" id="NavLinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
           <ul>
             <li><a href="">Home</a></li>
             <li><a href="">About</a></li>
@@ -37,9 +38,8 @@
             <li><a href="">Contact</a></li>
           </ul>
         </div>
-        <div class="icon">
-          <i class="fa-sharp fa-solid fa-bars"></i>
-        </div>
+
+        <i class="fa-sharp fa-solid fa-bars" onclick="showMenu()"></i>
       </nav>
 
       <div class="text-box">
@@ -52,5 +52,17 @@
         <a href="" class="hero-btn">Visit Us To know More </a>
       </div>
     </section>
+    <script>
+      var navLinks = document.getElementById("NavLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0px";
+        console.log("clicked show");
+      }
+      function hideMenu() {
+        navLinks.style.right = "-300px";
+        console.log("clicked");
+      }
+    </script>
   </body>
 </html>
