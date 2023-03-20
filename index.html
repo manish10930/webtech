@@ -25,14 +25,19 @@
       referrerpolicy="no-referrer"
     />
   </head>
+
   <body>
+    <!---header start-->
+
     <section class="header">
       <nav class="navbar">
         <a href=""><img src="img/logo.png" alt="" class="logo" /></a>
         <div class="nav-links" id="NavLinks">
           <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
           <ul>
-            <li><a href="">Home</a></li>
+            <li>
+              <a href="">Home</a>
+            </li>
             <li><a href="">About</a></li>
             <li><a href="">Services</a></li>
             <li><a href="">Contact</a></li>
@@ -52,16 +57,58 @@
         <a href="" class="hero-btn">Visit Us To know More </a>
       </div>
     </section>
+
+    <!---header end-->
+    <section class="services">
+      <h1>Services We Offer</h1>
+      <p>
+        Looking for website development, digital marketing, or graphic design
+        services? We've got you covered! Our team of experts can help bring your
+        online presence to the next level.
+      </p>
+
+      <div class="row">
+        <div class="col">
+          <h3>Website development</h3>
+          <p>
+            Our software company offers expert website development services to
+            help you achieve your marketing goals. From custom website design to
+            seamless user experience, our team has the expertise to create a
+            website that reflects your brand and meets the needs of your target
+            audience.
+          </p>
+        </div>
+        <div class="col">
+          <h3>Digital Marketing</h3>
+          <p>
+            Our software company offers comprehensive digital marketing
+            services, including search engine optimization, social media
+            marketing, email marketing, and more. Our experienced team can help
+            you create a customized digital marketing strategy that drives
+            traffic, generates leads, and increases conversions.
+          </p>
+        </div>
+        <div class="col">
+          <h3>Graphic Design</h3>
+          <p>
+            Look no further than our graphic design services. Our team of
+            talented designers can create stunning graphics for your website,
+            social media, marketing materials, and more. Whether you need a new
+            logo or a complete branding overhaul, we have the expertise to bring
+            your vision to life.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <script>
       var navLinks = document.getElementById("NavLinks");
 
       function showMenu() {
         navLinks.style.right = "0px";
-       
       }
       function hideMenu() {
         navLinks.style.right = "-300px";
-      
       }
     </script>
   </body>
