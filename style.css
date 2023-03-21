@@ -265,7 +265,7 @@ nav{
 
 }
 .clients img{
-    width: 100%;
+    width: 200px;
     height: 60%;
 }
 @media (max-width:600px){
