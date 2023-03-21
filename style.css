@@ -104,10 +104,14 @@ nav{
     border: 1px solid #f44336;
     transition: 1s;
 }
-.navbar .fa-solid {
-    display: none;
+.hide{
+    display: none !important;
 }
+.navIcon{
+    margin-right: 5px;
+    
 
+}
 
 
 @media (max-width:600px) {
@@ -143,13 +147,13 @@ nav{
         /* right: 0; */
         text-align: left;
         width: 51%;
-        z-index: 2;
+        z-index: 9999;
         margin-top: 0px;
         transition: 1.5s;
     }
-    .navbar .fa-solid{
-        display: block;
-        color: #fff;
+    .hide{
+        display: block !important;
+        color: #fff ;
         margin: 0px 5px;
         cursor: pointer;
         font-size: 25px;
@@ -157,19 +161,28 @@ nav{
         
         
     }
+ 
     .nav-links ul{
         padding: 30px;
     }
     .nav-links ul li{
         padding-top: 20px;
+        
     }
+    
 }
+
+
+
+
+
 /* <!---header end--> */
+
 
 .icons{
     display: block;
     size: 50px;
-    z-index: 9999;
+    z-index: 999;
 }
 
 
@@ -259,13 +272,15 @@ nav{
     display: flex;
     flex-basis: 31%;
     justify-content: space-evenly;
+    align-items: center;
 }
 .clients{
-    width: 100%;
+    width: 200px;
+
 
 }
 .clients img{
-    width: 200px;
+    width: 100%;
     height: 60%;
 }
 @media (max-width:600px){
@@ -274,3 +289,8 @@ nav{
    }
 }
 /* <----------------our-Clients----------------> */
+
+/*---------------- testimonials --------------*/
+
+
+/*---------------- testimonials --------------*/
