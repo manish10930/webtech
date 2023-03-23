@@ -24,6 +24,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9.1.1/modules/scrollbar/scrollbar.min.css"
+    />
     <script
       src="https://kit.fontawesome.com/7806f83116.js"
       crossorigin="anonymous"
@@ -44,7 +48,7 @@
               <a href=""><i class="fa-solid fa-house navIcon"></i>Home</a>
             </li>
             <li>
-              <a href=""
+              <a href="#about"
                 ><i class="fa-solid fa-address-card navIcon"></i>About</a
               >
             </li>
@@ -76,6 +80,26 @@
     </section>
 
     <!---header end-->
+    <!-- 
+    <div class="headerIcon">
+      <div class="headerIconMain">
+        <div>
+          <i class="fa-solid fa-code iconh"></i> <span> Web development</span>
+        </div>
+        <div>
+          <i class="fa-solid fa-pen-nib iconh"></i> <span> Graphic Design</span>
+        </div>
+
+        <div>
+          <i class="fa-brands fa-searchengin iconh"></i> <span>Seo</span>
+        </div>
+        <div>
+          <i class="fa-brands fa-digital-ocean iconh"></i>
+          <span>Digital Marketing</span>
+        </div>
+      </div>
+    </div> -->
+    <!---------------- services---------- -->
     <section class="services">
       <h1>Services We Offer</h1>
       <p>
@@ -117,6 +141,8 @@
         </div>
       </div>
     </section>
+    <!---------------- services---------- -->
+
     <!------------ icons-------- -->
     <section class="services-name">
       <div></div>
@@ -125,20 +151,22 @@
     <!------------ icons-------- -->
 
     <!----------------our-Clients---------------->
-    <section class="our-clients">
-      <h1>Our clients</h1>
-      <div class="style-client">
-        <div class="clients"><img src="img/client/1.jpg" alt="" /></div>
-        <div class="clients"><img src="img/client/4.png" alt="" /></div>
-        <div class="clients"><img src="img/client/3.png" alt="" /></div>
-        <div class="clients"><img src="img/client/5.png" alt="" /></div>
-        <div class="clients"><img src="img/client/2.jpg" alt="" /></div>
+    <section class="mainC">
+      <div class="our-clients">
+        <h1>Our clients</h1>
+        <div class="style-client">
+          <div class="clients"><img src="img/client/1.jpg" alt="" /></div>
+          <div class="clients"><img src="img/client/4.png" alt="" /></div>
+          <div class="clients"><img src="img/client/3.png" alt="" /></div>
+          <div class="clients"><img src="img/client/5.png" alt="" /></div>
+          <div class="clients"><img src="img/client/2.jpg" alt="" /></div>
+        </div>
       </div>
     </section>
     <!----------------our-Clients---------------->
 
     <!---------------------- testimonials--------------- -->
-    <div class="testimonial">
+    <section class="testimonial">
       <div class="inner">
         <h1>What Our Client Says</h1>
         <div class="border"></div>
@@ -169,7 +197,7 @@
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
+              <i class="fa-solid fa-star"></i>
               <i class="fa-regular fa-star"></i>
               <p>
                 Webtech's software has been a game changer for my business.I
@@ -182,8 +210,8 @@
 
           <div class="colTesti">
             <div class="testi">
-              <img src="img/tesi/1.jpg" alt="" />
-              <div class="name">Full Name</div>
+              <img src="img/tesi/1.jpeg" alt="" />
+              <div class="name">Mahin reza</div>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -199,9 +227,119 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!---------------------- testimonials--------------- -->
+
+    <!--------- about us---------- -->
+    <section class="mainwwd">
+      <div class="wwd" id="about">
+        <h1>About Us</h1>
+
+        <p>
+          As a software company, WebTech specializes in developing software
+          applications, tools, and systems for various industries and purposes.
+          Here are some of the key activities that WebTech engages:
+
+          <li class="aboutList">
+            Software Development: WebTech designs, codes, tests, and deploys
+            software applications, ranging from simple mobile applications to
+            complex enterprise-level software solutions. They work with clients
+            to understand their needs and create customized software solutions
+            that meet their requirements.
+          </li>
+
+          <li class="aboutList">
+            Web Development: WebTech creates responsive and user-friendly
+            websites that are optimized for search engines and meet industry
+            standards. They use a variety of technologies and platforms to
+            create websites, including HTML, CSS, JavaScript, PHP, and
+            WordPress.
+          </li>
+
+          <li class="aboutList">
+            Software Maintenance and Support: WebTech provides ongoing
+            maintenance and support services to ensure that the software
+            applications they develop continue to function properly and remain
+            up-to-date. They offer bug fixes, security updates, and feature
+            enhancements to ensure the longevity and success of the software.
+          </li>
+        </p>
+
+        <p>
+          Overall, WebTech is committed to delivering high-quality software
+          solutions that meet the needs of clients and help them achieve their
+          business goals.
+        </p>
+      </div>
+    </section>
+    <!--------- about us---------- -->
+
+    <!------------ out team------- -->
+    <!-- <div class="devh1">
+      <h1>Devlopers</h1>
+    </div> -->
+    <div class="ourteam">
+      <div class="devh1">
+        <h1>Our Devlopers</h1>
+      </div>
+      <div class="developers">
+        <div class="line"></div>
+        <div class="maindiv">
+          <div class="overlay">
+            <div class="img">
+              <img src="img/team/1.jpeg" alt="" class="cardimg" />
+            </div>
+          </div>
+
+          <div class="name">
+            <h4>Manish Kumar</h4>
+            <span style="color: chartreuse">Full Stack Developer</span>
+          </div>
+
+          <div class="des">
+            <p>Manish has 3+ years of experience in Mern Web development</p>
+          </div>
+        </div>
+
+        <div class="maindiv">
+          <div class="overlay">
+            <div class="img">
+              <img src="img/team/2.jpg" alt="" class="cardimg" />
+            </div>
+          </div>
+
+          <div class="name">
+            <h4>Aman Kumar</h4>
+            <span style="color: chartreuse">Full Stack Developer</span>
+          </div>
+
+          <div class="des">
+            <p>Aman has 3.5+ years of experience in Mern Web development</p>
+          </div>
+        </div>
+
+        <div class="maindiv">
+          <div class="overlay">
+            <div class="img">
+              <img src="img/team/3.jpg" alt="" class="cardimg" />
+            </div>
+          </div>
+
+          <div class="name">
+            <h4>Saurabh Suman</h4>
+            <span style="color: chartreuse">Front end developer</span>
+          </div>
+
+          <div class="des">
+            <p>Saurabh has 1.5+ years of experience in Mern Web development</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------ out team------- -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
 
     <script>
       var navLinks = document.getElementById("NavLinks");
