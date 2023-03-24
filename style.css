@@ -21,6 +21,7 @@
 .whatsapp_img{
     width: 60px;
     height: 60px;
+    z-index:99999;
 }
 .whatsapp_main{
     position: fixed;
@@ -252,7 +253,7 @@ nav{
     padding: 20px 10px;
     margin: 0 10px;
     box-sizing: border-box;
-    z-index: 999;
+    
 
 }
 .col p{
