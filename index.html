@@ -34,10 +34,20 @@
     ></script>
   </head>
 
-  <body>
+  <body onload="myFunction()">
+    <div id="loading"></div>
+
+    <!-- whatsapp -->
+    <div class="whatsapp_main">
+      <a href="https://wa.link/akz3z4" target="_blank">
+        <img src="img/wts.png" class="whatsapp_img" alt="" />
+      </a>
+    </div>
+    <!-- whatsapp -->
+
     <!---header star t-->
 
-    <section class="header">
+    <section class="header" id="home">
       <nav class="navbar">
         <a href=""><img src="img/logo.png" alt="" class="logo" /></a>
         <div class="nav-links" id="NavLinks">
@@ -45,7 +55,7 @@
           <i class="fa-solid fa-bars-sort"></i>
           <ul>
             <li>
-              <a href=""><i class="fa-solid fa-house navIcon"></i>Home</a>
+              <a href="#home"><i class="fa-solid fa-house navIcon"></i>Home</a>
             </li>
             <li>
               <a href="#about"
@@ -53,12 +63,12 @@
               >
             </li>
             <li>
-              <a href=""
+              <a href="#services"
                 ><i class="fa-brands fa-servicestack navIcon"></i>Services</a
               >
             </li>
             <li>
-              <a href="">
+              <a href="#footer">
                 <i class="fa-solid fa-address-book navIcon"></i> Contact</a
               >
             </li>
@@ -73,9 +83,9 @@
         <p>
           Look no further than Webtech. We specialize in building high-quality
           websites that meet the needs of our clients.<br />
-          Contact us today to learn more !
+          Contact us today to learn more....!
         </p>
-        <a href="" class="hero-btn">Visit Us To know More </a>
+        <a href="" class="hero-btn">Call Us To know More </a>
       </div>
     </section>
 
@@ -100,7 +110,7 @@
       </div>
     </div> -->
     <!---------------- services---------- -->
-    <section class="services">
+    <section class="services" id="services">
       <h1>Services We Offer</h1>
       <p>
         Looking for website development, digital marketing, or graphic design
@@ -279,7 +289,7 @@
     <!-- <div class="devh1">
       <h1>Devlopers</h1>
     </div> -->
-    <div class="ourteam">
+    <div class="ourteam" id="team">
       <div class="devh1">
         <h1>Our Developers</h1>
       </div>
@@ -294,7 +304,7 @@
 
           <div class="name">
             <h4>Manish Kumar</h4>
-            <span style="color: chartreuse">Full Stack Developer</span>
+            <span style="color: chartreuse">Full-Stack Developer</span>
           </div>
 
           <div class="des">
@@ -305,13 +315,13 @@
         <div class="maindiv">
           <div class="overlay">
             <div class="img">
-              <img src="img/team/2.jpg" alt="" class="cardimg" />
+              <img src="img/team/211.jpg" alt="" class="cardimg" />
             </div>
           </div>
 
           <div class="name">
             <h4>Aman Kumar</h4>
-            <span style="color: chartreuse">Full Stack Developer</span>
+            <span style="color: chartreuse">Full-Stack Developer</span>
           </div>
 
           <div class="des">
@@ -328,16 +338,66 @@
 
           <div class="name">
             <h4>Saurav Suman</h4>
-            <span style="color: chartreuse">Full stack developer</span>
+            <span style="color: chartreuse">Full-Stack developer</span>
           </div>
 
           <div class="des">
-            <p>Saurabh has 1.5+ years of experience in Mern Web development</p>
+            <p>Saurav has 1.5+ years of experience in Mern Web development</p>
           </div>
         </div>
       </div>
     </div>
     <!------------ out team------- -->
+
+    <!-------------footer------------->
+    <footer id="footer">
+      <div class="footerContainer">
+        <div class="socialIcons">
+          <a href="https://www.facebook.com/pratik.aryan.35" target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/manish-kumar-51a196178/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/manish10930" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://twitter.com/Manishk00538486?t=qoaz0_o8l_R9xPCQMnvpcQ&s=08"
+            target="_blank"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/_m_ani_sh_?r=nametag"
+            target="_blank"
+            ><i class="fa-brands fa-square-instagram"></i
+          ></a>
+        </div>
+        <div class="footerdiv">
+          <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#footer">CONTACT US</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#team">OUR TEAM</a></li>
+          </ul>
+        </div>
+
+        <div class="contact-us">
+          <p>
+            <i class="fa-solid fa-paper-plane"></i>manishkumar10930@gmail.com
+          </p>
+          <p><i class="fa-solid fa-phone"></i>8540988156</p>
+        </div>
+      </div>
+      <div class="footer-Bottom">
+        <p>Copyright &copy;2023</p>
+      </div>
+    </footer>
+
+    <!--------------------- footer---------------->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
 
@@ -349,6 +409,13 @@
       }
       function hideMenu() {
         navLinks.style.right = "-300px";
+      }
+    </script>
+    <script>
+      var preloader = document.getElementById("loading");
+
+      function myFunction() {
+        preloader.style.display = "none";
       }
     </script>
   </body>
